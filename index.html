@@ -20,12 +20,18 @@
             <p v-else>Out of stock</p>
             <!-- v-show is a better performance option to show/hide elements-->
             <p v-show="inStock">{{ inventory }}</p>
+            <p>Details:</p>
             <ul>
                 <li v-for="detailEntry in details">{{detailEntry}}</li>
+            </ul>
+            <p>Sizes:</p>
+            <ul>
+                <li v-for="size in sizeAvail">{{ size }}</li>
             </ul>
             <div v-for="variantEntry in variants" v-bind:key="variantEntry.variantID">
                 <p>{{ variantEntry.variantColor }}</p>
             </div>
+            
           </div>
         </div>
       </div>
