@@ -6,6 +6,7 @@ var app = new Vue({
         image: "./image/vmSocks-green-onWhite.jpg",
         myurl: "https://github.com",
         inventory: 100,
-        inStock: false
+        inStock: false,
+        onSale: true
     }
 })
