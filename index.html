@@ -14,6 +14,11 @@
             <h1>{{ product }}</h1>
             <p>{{ description }}</p>
             <a v-bind:href="myurl">GitHub</a>
+            <p v-if="inventory > 10">In Stock</p>
+            <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out</p>
+            <p v-else>Out of stock</p>
+            <!-- v-show is a better performance option to show/hide elements-->
+            <p v-show="inStock">{{inventory}}</p>
           </div>
         </div>
       </div>
