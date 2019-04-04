@@ -7,6 +7,17 @@ var app = new Vue({
         myurl: "https://github.com",
         inventory: 100,
         inStock: false,
-        onSale: true
+        onSale: true,
+        details: ["80% cotton","20% polyester", "Gender-neutral"],
+        variants: [
+            {
+                variantID: 2234,
+                variantColor: "green"
+            },
+            {
+                variantID: 2235,
+                variantColor: "blue"
+            }
+        ]
     }
 })
