@@ -29,7 +29,12 @@ var app = new Vue({
       this.cart += 1;
     },
     updateProduct(variantImage) {
-        this.image = variantImage
+      this.image = variantImage;
+    },
+    removeFromCart: function() {
+      if (this.cart > 0) {
+        this.cart -= 1;
+      }
     }
   }
 });
